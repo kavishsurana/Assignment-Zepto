@@ -1,0 +1,93 @@
+.user-picker-container {
+    width: 400px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .user-picker-heading {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .user-picker-input-container {
+    position: relative;
+  }
+  
+  .user-picker-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .user-picker-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 150px; /* Set the maximum height for the dropdown */
+    overflow-y: auto;
+  }
+
+  .user-picker-suggestions:empty {
+    display: none;
+  }
+  
+  .user-picker-suggestions li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .user-picker-suggestions li:hover {
+    background-color: #f0f0f0;
+  }
+
+  .user-picker-input:focus + .user-picker-suggestions {
+    display: block;
+  }
+  
+  .user-picker-chips {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .chip {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .chip span {
+    margin-left: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #666;
+  }
+
+  .horizontal-line {
+    border-bottom: 1px solid #00f; /* Adjust color and thickness as needed */
+    width: 100%; /* Adjust the width of the line */
+    margin-bottom: 10px; /* Add margin if necessary */
+  }
+  
+  .horizontal-line.focused {
+    border-bottom: 2px solid #00f; /* Adjust focused state styling as needed */
+  }
+  
